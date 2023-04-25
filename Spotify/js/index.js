@@ -1,4 +1,4 @@
-function searchAlbum() {
+const searchAlbum = () => {
   let nombreArtista = document.getElementById("nombreArtista");
   let nombreAlbum = document.getElementById("nombreAlbum");
   let fotoArtista = document.getElementById("fotoArtista");
