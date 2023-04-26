@@ -6,7 +6,7 @@ let listaCanciones = document.getElementById("listaCanciones");
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "82c331f6b9msh56dfd4f13c1594cp101eefjsn6d2154f30e97",
+    "X-RapidAPI-Key": "58a453fe03mshb5bd1b917318450p1bc291jsn6e55b4b8ed44",
     "X-RapidAPI-Host": "spotify23.p.rapidapi.com",
   },
 };

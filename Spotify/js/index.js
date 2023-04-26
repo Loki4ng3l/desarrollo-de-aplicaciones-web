@@ -1,7 +1,7 @@
 const searchAlbum = () => {
   let nombreArtista = document.getElementById("nombreArtista");
   let nombreAlbum = document.getElementById("nombreAlbum");
-  let fotoArtista = document.getElementById("fotoArtista");
+  let fotoArtista = document.getElementById("fotoAlbum");
   let listaCanciones = document.getElementById("listaCanciones");
   const artistId = document.getElementById("artist-id").value;
   const url = `https://spotify23.p.rapidapi.com/albums/?ids=${artistId}`;
@@ -41,4 +41,4 @@ const searchAlbum = () => {
       listaCanciones.innerHTML = todasLasCanciones;
     })
     .catch((err) => console.error(err));
-}
+};
