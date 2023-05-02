@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 11</title>
+    <title>Práctica 18</title>
+
 </head>
 <body>
     <div id="miApp">
-        <h1>Hola Mundo</h1>
-        <p> {{ 5 * 2 }}</p>
-        <p> {{ 'Mario' + ' y ' + 'Luigi' }}</p>
+        <!-- Se puede utilizar in o of -->
+        <ul v-for="frase in frases" :key="frases.id">
+            <li>{{ frase.id }} - {{ frase.texto }}</li>
+        </ul>
     </div>
-    
-    <p> {{ 50 * 20 }}</p>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/app.js"></script>

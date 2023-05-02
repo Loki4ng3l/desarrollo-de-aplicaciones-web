@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 11</title>
+    <title>Práctica 19.1</title>
+
 </head>
 <body>
     <div id="miApp">
-        <h1>Hola Mundo</h1>
-        <p> {{ 5 * 2 }}</p>
-        <p> {{ 'Mario' + ' y ' + 'Luigi' }}</p>
+       <ul v-for="{nombre, autor} in canciones" :key="autor">
+        <li>{{ nombre }} - {{ autor }}</li>
+       </ul>
     </div>
-    
-    <p> {{ 50 * 20 }}</p>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/app.js"></script>
