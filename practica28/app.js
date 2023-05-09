@@ -4,7 +4,7 @@ createApp({
  
   data() { 
     return {
-      lenguajes: []
+      comentarios: ""
     }
   }
 }).mount('#miApp');

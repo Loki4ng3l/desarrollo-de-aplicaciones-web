@@ -4,7 +4,7 @@ createApp({
  
   data() { 
     return {
-      lenguajes: []
+      dia: ""
     }
   }
 }).mount('#miApp');
