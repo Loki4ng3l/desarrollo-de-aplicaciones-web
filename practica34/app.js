@@ -20,11 +20,11 @@ const articulos = {
 
 createApp({
   components: {
-    articulos: articulos,
+    'articulos': articulos,
   },
   data() {
     return {
-      datos: [
+      vegetales: [
         {
           codigo: 1,
           descripcion: "papas",
@@ -39,6 +39,20 @@ createApp({
           codigo: 3,
           descripcion: "peras",
           precio: 18.2,
+        },
+      ],
+      carnes: [
+        {
+          codigo: 4,
+          descripcion: "res",
+        },
+        {
+          codigo: 5,
+          descripcion: "pollo",
+        },
+        {
+          codigo: 6,
+          descripcion: "cerdo",
         },
       ],
     };
