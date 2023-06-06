@@ -1,3 +1,7 @@
+<script setup>
+import formulario from './components/formulario.vue';
+</script>
+
 <template>
-  <h1>Hola mundo</h1>
+  <formulario></formulario>
 </template>
