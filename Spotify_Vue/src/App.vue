@@ -11,7 +11,7 @@
       <p><strong>Álbum:</strong> {{album.name}}</p>
       <img :src="albumUrl" alt="Album image" />
       <div v-for="song in songs" :key="song.id">
-        <p>{{song.name}}</p>
+        <p>{{ song.name.slice(0, 40) }}</p>
         <audio controls>
           <source :src="song.preview_url" type="audio/mpeg" />
           Your browser does not support the audio element.
@@ -22,6 +22,12 @@
 </template>
 
 <script>
+var cadenaOriginal = "Esta es una cadena de ejemplo.";
+var maxCaracteres = 10; // Número máximo de caracteres que deseas mostrar
+
+var cadenaLimitada = cadenaOriginal.substring(0, maxCaracteres);
+console.log(cadenaLimitada); // Imprimirá "Esta es un"
+
 const urls = {
   artists: "https://api.spotify.com/v1/search?type=artist",
   token: "https://accounts.spotify.com/api/token",
